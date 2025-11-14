@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chess ultimate edit",
+  "version": "2.0",
+  "description": "Эффект эпичной ауры тикток хайп скибидитойлет после хода пользователя на chess.com и lichess.org",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.chess.com/*", "*://*.lichess.org/*"],
+      "js": ["app.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["troll1.png", "troll2.png", "troll.png", "aura1.mp3", "aura2.mp3", "epic.mp3"],
+      "matches": ["*://*.chess.com/*", "*://*.lichess.org/*"]
+    }
+  ]
+}
